@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         if (collision.gameObject.tag == "Zombie")
         {
             Debug.Log("You lose");
+            Destroy(collision.gameObject);
         }
     }
 }
